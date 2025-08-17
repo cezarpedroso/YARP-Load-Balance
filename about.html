@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarp Reverse Proxy - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="home.html" class="nav-logo">
+                    <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4M5 12l4 4"></path>
+                    </svg>
+                    <span class="nav-title">Yarp Proxy</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="home.html" class="nav-link home-link">Home</a>
+                    <a href="about.html" class="nav-link active about-active">About</a>
+                    <a href="get-started.html" class="nav-link start-link">Get Started</a>
+                </div>
+                
+                <div class="nav-mobile">
+                    <button onclick="toggleMobileMenu()" class="nav-mobile-btn" id="mobile-menu-btn">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="nav-mobile-menu" id="mobile-menu">
+                <a href="home.html" class="nav-mobile-link">Home</a>
+                <a href="about.html" class="nav-mobile-link">About</a>
+                <a href="get-started.html" class="nav-mobile-link">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero about-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h1 class="hero-title">About Yarp Proxy</h1>
+                <p class="hero-subtitle">Lightweight C# reverse proxy for modern applications</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+        <div class="container">
+            <div class="features-header">
+                <h2>Features</h2>
+            </div>
+            <div class="features-grid-2">
+                <div class="feature-card-large">
+                    <div class="feature-icon about-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                        </svg>
+                    </div>
+                    <h3>Routing</h3>
+                    <p>Flexible request routing</p>
+                </div>
+                <div class="feature-card-large">
+                    <div class="feature-icon about-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16l-3-9"></path>
+                        </svg>
+                    </div>
+                    <h3>Load Balancing</h3>
+                    <p>Distribute traffic across servers</p>
+                </div>
+                <div class="feature-card-large">
+                    <div class="feature-icon about-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3>Health Checks</h3>
+                    <p>Monitor service health</p>
+                </div>
+                <div class="feature-card-large">
+                    <div class="feature-icon about-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                        </svg>
+                    </div>
+                    <h3>SSL Support</h3>
+                    <p>HTTPS certificate handling</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Architecture Section -->
+    <div class="architecture-section">
+        <div class="container">
+            <div class="architecture-header">
+                <h2>Simple & Effective</h2>
+                <p>Built with Microsoft YARP and .NET 8 for reliability</p>
+            </div>
+            <div class="architecture-diagram">
+                <div class="diagram-flow">
+                    <span class="diagram-box about-primary">Client</span>
+                    <span class="diagram-arrow">→</span>
+                    <span class="diagram-box about-secondary">Proxy</span>
+                    <span class="diagram-arrow">→</span>
+                    <span class="diagram-box diagram-services">Services</span>
+                </div>
+                <p class="diagram-description">Clean request routing with built-in health monitoring</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

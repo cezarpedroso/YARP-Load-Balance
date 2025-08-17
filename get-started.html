@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarp Reverse Proxy - Get Started</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="home.html" class="nav-logo">
+                    <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4M5 12l4 4"></path>
+                    </svg>
+                    <span class="nav-title">Yarp Proxy</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="home.html" class="nav-link home-link">Home</a>
+                    <a href="about.html" class="nav-link about-link">About</a>
+                    <a href="get-started.html" class="nav-link active start-active">Get Started</a>
+                </div>
+                
+                <div class="nav-mobile">
+                    <button onclick="toggleMobileMenu()" class="nav-mobile-btn" id="mobile-menu-btn">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="nav-mobile-menu" id="mobile-menu">
+                <a href="home.html" class="nav-mobile-link">Home</a>
+                <a href="about.html" class="nav-mobile-link">About</a>
+                <a href="get-started.html" class="nav-mobile-link">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero start-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                    </svg>
+                </div>
+                <h1 class="hero-title">Get Started</h1>
+                <p class="hero-subtitle">Easy setup for your reverse proxy</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Setup Section -->
+    <div class="setup-section">
+        <div class="container">
+            <div class="setup-header">
+                <h2>Quick Setup</h2>
+            </div>
+            <div class="setup-steps">
+                <div class="setup-step">
+                    <h3>1. Download Project</h3>
+                    <p>Get the source code from your repository</p>
+                </div>
+                <div class="setup-step">
+                    <h3>2. Install .NET 8</h3>
+                    <p>Ensure you have .NET 8 SDK installed</p>
+                </div>
+                <div class="setup-step">
+                    <h3>3. Configure Settings</h3>
+                    <p>Update your configuration files as needed</p>
+                </div>
+                <div class="setup-step">
+                    <h3>4. Start the Proxy</h3>
+                    <p>Build and run your application</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+        <div class="container">
+            <div class="features-header">
+                <h2>Main Features</h2>
+            </div>
+            <div class="features-grid-2">
+                <div class="feature-card-large">
+                    <div class="feature-icon start-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l-7 7m7-7l-7-7"></path>
+                        </svg>
+                    </div>
+                    <h3>Load Balancing</h3>
+                    <p>Distribute requests across multiple backend services</p>
+                </div>
+                <div class="feature-card-large">
+                    <div class="feature-icon start-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3>SSL Support</h3>
+                    <p>Handle HTTPS certificates and secure connections</p>
+                </div>
+                <div class="feature-card-large">
+                    <div class="feature-icon start-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3>Health Monitoring</h3>
+                    <p>Track the status of your backend services</p>
+                </div>
+                <div class="feature-card-large">
+                    <div class="feature-icon start-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12"></path>
+                        </svg>
+                    </div>
+                    <h3>Request Routing</h3>
+                    <p>Flexible routing rules and request transformation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Get Started Today</h2>
+                <p>Simple setup for a powerful reverse proxy solution</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/cezarpedroso/Reverse-Proxy-YARP" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                        View on GitHub
+                    </a>
+                    <a href="about.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
